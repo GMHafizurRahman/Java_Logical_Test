@@ -1,0 +1,19 @@
+package com.company;
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        // write your code here
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a Number: ");
+        int num = sc.nextInt();
+        int sum =0;
+        for (int i = 1; i<=num; i++){
+            if (i%2==0){
+                System.out.println(i+", ");
+                sum +=i;
+            }
+        }
+        System.out.println("Total : " + sum);
+    }
+}
+
